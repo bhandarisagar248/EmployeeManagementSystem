@@ -1,0 +1,107 @@
+/* Container card */
+.card {
+  max-width: 600px;
+  width: 90%;
+  margin: 2rem auto;
+  background: #98cd97;
+  border-radius: 20px;
+  /* box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); */
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-body:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+/* Card body */
+.card-body {
+  border: none !important;
+  background: #7bca82;
+  min-width:406.237px !important;
+  /* background: #61a967; */
+  border-radius: 16px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+/* Title */
+.card-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff !important;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+/* Labels */
+.form-group label {
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+/* Inputs */
+.form-control {
+  border-radius: 12px;
+  padding: 0.8rem 1rem;
+  border: 2px solid #d7f3d4;
+  background: #ffffff;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #56ab2f;
+  box-shadow: 0 0 8px rgba(86, 171, 47, 0.4);
+  outline: none;
+}
+
+/* Submit button */
+.btn-primary {
+  background: linear-gradient(135deg, #11998e, #38ef7d);
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 6px 20px rgba(17, 153, 142, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #38ef7d, #11998e);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(17, 153, 142, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .card {
+    padding: 1rem;
+  }
+  .card-title {
+    font-size: 1.4rem;
+  }
+  .btn-primary {
+    width: 100%;
+  }
+}
+
+#passError{
+    color: #9a1927 !important;
+}
+#invalidError{
+    color: #9a1927 !important;
+
+}
