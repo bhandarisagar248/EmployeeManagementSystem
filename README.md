@@ -34,20 +34,23 @@ A full-featured **Employee Management System** built using **Spring Boot**, **My
 employee-management-system/
 │
 ├── src/
-│ ├── main/
-│ │ ├── java/com/example/employee/
-│ │ │ ├── controller/
-│ │ │ ├── model/
-│ │ │ ├── repository/
-│ │ │ ├── service/
-│ │ │ ├── security/
-│ │ │ └── EmployeeManagementApplication.java
-│ │ └── resources/
-│ │ ├── application.properties
-│ │ └── static/
+│   └── main/
+│       ├── java/
+│       │   └── com/example/employee/
+│       │       ├── controller/                # Handles incoming HTTP requests
+│       │       ├── model/                     # Contains entity classes
+│       │       ├── repository/                # JPA repositories for DB access
+│       │       ├── service/                   # Business logic layer
+│       │       ├── security/                  # Security config and auth logic
+│       │       └── EmployeeManagementApplication.java  # Main application class
+│       │
+│       └── resources/
+│           ├── application.properties         # Spring Boot application configs
+│           └── static/                        # Static files (if needed for UI)
 │
-├── pom.xml
-└── README.md
+├── pom.xml                                     # Maven configuration file
+└── README.md                                   # Project documentation
+
 
 ---
 
